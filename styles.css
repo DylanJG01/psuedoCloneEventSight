@@ -1,0 +1,225 @@
+* {
+    background-color: #eeedf2;
+    color: #6f7287;
+    font-family: "Neue Plak", sans-serif;
+}
+
+.flx {
+    display: flex;
+}
+.boxshadow {
+    box-shadow: 0px 0px 5px grey;   
+}
+.boxshadow:hover{
+    box-shadow: 0px 0px 5px orangered;
+}
+
+header {
+    color: #f05537;
+    margin: 25px auto;
+}
+.header-links {
+    justify-content: space-between;
+        width: 350px;
+}
+
+footer{
+    background-color: #1e0a3c;
+    color: #FFFFFF;
+}
+.search{
+    /* border: 1px solid black; */
+    align-items: flex-end;
+    justify-content: flex-start;
+    width:200px;
+    padding: 10px 10px;
+    margin: 0 10px;
+    box-shadow: 2px 2px 5px grey;
+}
+.search:hover{
+    box-shadow: 2px 2px 5px orangered;
+}
+.fa-search{
+    margin: 0 8px 1px 5px;
+}
+
+.badPractice > a {
+    margin: 0 20px;
+    color: orangered;
+    text-decoration: none;
+}
+.badPractice > a:hover{
+
+}
+.navbar {
+    justify-content: space-around;
+    align-items: center;
+
+}
+
+.logo{
+    color: orangered;
+    font-size: xx-large;
+    font-weight: bold;
+
+}
+.trends{
+    margin-top: 25px;
+    margin-bottom: 10px;
+    font-size: large;
+    font-weight: 900;
+}
+
+.categories {
+    justify-content: space-around;
+    flex-grow: 1;
+    flex-shrink: 0;
+}
+.categories__item {
+    display: flex;
+    width: 24%;
+    height: 50px;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+}
+.categories__item:hover * {
+    color:orangered;
+}
+.item__text {
+    margin-left: 5px;
+}
+
+
+img {
+    max-width: 95%;
+    max-height: 60%;
+}
+
+.grid{
+    display: grid;
+    grid-template-columns:1fr 1fr; 
+    grid-template-rows: 350px 350px;
+    grid-template-areas: "pic1 pic2"
+                         "pic3 deadspace";
+}
+
+.gridx1{
+    grid-area: pic1;
+    display: flex;
+    flex-direction: column;
+    margin-left: 5px;
+    /* background-color: green; */
+}
+.gridx2 {
+    grid-area: pic2;
+    display: flex;
+    flex-direction: column;
+    /* background-color: red; */
+}
+.gridx3 {
+    grid-area: pic3;
+    display: flex;
+    flex-direction: column;
+    /* background-color: blue; */
+    /* height: 350px; */
+    margin-left: 5px;
+}
+
+.event__title, .event__date{
+    margin-top: 30px;
+    margin-left: 30px;
+}
+
+.event__title {
+    color: purple;
+    font-weight: 700;
+    font-size: large;
+}
+.event__title:hover {
+    color:orangered;
+}
+.event__cost {
+    margin-right: 35px;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.whatever{
+    /* background-color: black; */
+    margin-bottom: 15px;
+    justify-content: center;
+}
+.whatever > a:hover{
+    color:orangered;
+}
+.whatever > a{
+    display: flex;
+    width: 24%;
+    height: 50px;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    margin-top: 15px;
+}
+
+.bottom__banner{
+    background-color: navy;
+    height: 100px;
+    display:flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+.bottom__banner__text {
+    background-color: navy;
+    margin-right: 30px;
+    color:white;
+}
+
+@media screen and (max-width: 700px){ 
+        .flx {
+            flex-wrap: wrap;
+        }
+        .logo{
+            min-width: 100%;
+            justify-content: center;
+            margin-bottom: 10px;
+        }
+        .search {
+            min-width: 100%;
+            justify-content: flex-start;
+            /* padding-left: 150px; */
+            margin-bottom: 5px;
+        }
+        .header-links{
+
+            min-width: 100%;
+            justify-content: center;
+            margin: 15px 0;
+        }
+        .categories__item {
+            display: flex;
+            width: 100%;
+            height: 50px;
+            justify-content: center;
+            align-items: center;
+            text-decoration: none;
+        }
+        .grid {
+            display: grid;
+            grid-template-columns: 1fr;
+            grid-template-rows: 300px;
+            grid-template-areas: "pic1" "pic2"
+                "pic3";
+        }
+        .event__title {
+            display: flex;
+            justify-content: center;
+        }
+        .event__date{
+            display: flex;
+            justify-content: center;
+        }
+
+
+}
